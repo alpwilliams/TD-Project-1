@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -18,7 +18,7 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: skyblue;
 }
 
 /* Section Styles */
@@ -52,12 +52,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: skyblue;
 }
 
 header {
   text-align: center;
-  background: url('images/kaneohe.jpg') no-repeat top center ;
+  background: url('images/kaneohe-crop.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -90,7 +90,7 @@ header .profile-image:hover {
 }
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
+  padding: 20px 40px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
@@ -99,7 +99,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: skyblue;
 }
 
 ul.skills {
@@ -118,6 +118,21 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.skills li:hover {
+  transform: scale(1.2);
+}
+
+.certs li{
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.certs li:hover{
+  transform: scale(1.05); /*not sure if i like the look of the transform, image gets a bit blurry :( need to further research how to pull this off...*/
 }
 
 footer {
@@ -151,18 +166,24 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
+
+/*a.twitter {
   background-image: url(images/twitter.svg);
-}
+}*/ /*commenting out the twitter because it is not currently in use */
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
-  opacity: 1;
+  opacity: 1; 
+  transform: scale(2) rotate(360deg);
 }
+
 .clearfix {
   clear: both;
 }
