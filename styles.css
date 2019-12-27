@@ -18,12 +18,12 @@ a {
   color: #999;
 }
 a:hover {
-  color: skyblue;
+  color: #87CEEB;
 }
 
 /* Section Styles */
 
-.main-nav {
+.nav-top {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -31,6 +31,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -52,7 +53,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: skyblue;
+  color: #87CEEB;
 }
 
 header {
@@ -88,7 +89,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.section {
   margin: 30px;
   padding: 20px 40px 40px 40px;
   max-width: 500px;
@@ -98,8 +99,8 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: skyblue;
+.section:hover {
+  border-color: #87CEEB;
 }
 
 ul.skills {
